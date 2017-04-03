@@ -15,14 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
   var LogOutButton = document.getElementById('logout');
 
   SubmitButton.addEventListener('click', function() {
-
+    document.getElementById("submit").innerHTML = 'Adding.. please wait';
     browser.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
         var url = tabs[0].url;
 
         var data = new FormData();
         data.append('source', url);
-        console.log('source: ',url);
-        console.log("Authorization", localStorage.packtoken);
+        // console.log('source: ',url);
+        // console.log("Authorization", localStorage.packtoken);
 
         var xhr = new XMLHttpRequest();
         xhr.open('POST', 'https://nameless-lowlands-50285.herokuapp.com/api/article/create/', true);
@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById("submit").innerHTML = 'Added';
           } else {
             // TODO: Handle error gracefully and show solution.
+            document.getElementById("detail").innerHTML = 'Error Occurred. Please Try again';
             localStorage.removeItem('packtoken');
             localStorage.removeItem('packname');
             window.location = "popup.html";
