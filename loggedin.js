@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   SubmitButton.addEventListener('click', function() {
     document.getElementById("submit").innerHTML = 'Adding.. please wait';
-    browser.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
+    chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
         var url = tabs[0].url;
 
         var data = new FormData();
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById("submit").innerHTML = 'Added';
           } else {
             // TODO: Handle error gracefully and show solution.
-            document.getElementById("detail").innerHTML = 'Error Occurred. Please Try again';
+            document.getElementById("detail").innerHTML = 'Error Occurred. Please try again.';
             localStorage.removeItem('packtoken');
             localStorage.removeItem('packname');
             window.location = "popup.html";

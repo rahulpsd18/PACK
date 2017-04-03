@@ -13,9 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var checkPageButton = document.getElementById('checkPage');
   checkPageButton.addEventListener('click', function() {
 
-    var gettingActiveTab = browser.tabs.query({active: true, currentWindow: true});
-    gettingActiveTab.then((tabs) => {
-
+    var gettingActiveTab = chrome.tabs.query({active: true, currentWindow: true},
+    function(tabs){
       var data = new FormData();
       data.append('username', document.getElementById("username").value);
       data.append('password', document.getElementById("password").value);
@@ -33,9 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       };
       xhr.send(data);
-
-
-
     });
 
   }, false);
