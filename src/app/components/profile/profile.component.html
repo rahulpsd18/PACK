@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="container pt-4">
+    <div *ngIf="username" style="margin: 0 auto; cursor:pointer;">
+      <div class="card" style="width: 40rem;text-align:center;margin: 0 auto;">
+        <img src="assets/user.png" style="width:30%;margin: 0 auto;border-radius:50%;background-color:#E7E7E7;" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title display-4">{{name}}</h4>
+          <p class="card-text">Genius unrefined resembles a flash of lightning, but wisdom is like the sun.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><span style="margin: 0 auto;">Username: {{username}}</span></li>
+          <li class="list-group-item"><span style="margin: 0 auto;">Email: {{email}}</span></li>
+          <li class="list-group-item"><span style="margin: 0 auto;" class="badge badge-info">{{articles}} Articles added.</span></li>
+        </ul>
+        <div class="card-block">
+          <a routerLink="" class="card-link">Home</a>
+          <a href="#" (click)="signOut()" class="card-link">Log out</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
