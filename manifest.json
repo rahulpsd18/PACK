@@ -1,0 +1,25 @@
+{
+
+  "manifest_version": 2,
+  "name": "Pack",
+  "version": "1.0",
+  "height": 645,
+  "width": 800,
+  "description": "Add articles to your ack Account",
+  "homepage_url": "https://pecker.surge.sh",
+  "icons": {
+    "48": "logo.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_title": "Pack",
+    "default_popup": "popup.html"
+  }
+
+}
