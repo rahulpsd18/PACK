@@ -6,7 +6,7 @@ The android app for the same was made by [Shashank](https://github.com/Shashank1
 A [web-app](https://pecker.surge.sh/) and a [Chrome add-on](https://github.com/rahulpsd18/PACK/tree/chrome-addon) were also created which can be found in this repository's branches.
 
 ## Distributable
-A distributable .xpi file is provided in the dist folder. Click [here](https://github.com/rahulpsd18/PACK/raw/firefox-addon/dist/pack-1.1-an%2Bfx.xpi) to download it directly.
+A distributable .xpi file is provided in the dist folder. Click [here](https://github.com/rahulpsd18/PACK/raw/firefox-addon/dist/pack-1.2-an%2Bfx.xpi) to download it directly.
 
 ## Installation
 1. Go to `about:addons` in your firefox browser.
