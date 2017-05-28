@@ -1,7 +1,7 @@
 # PACK (Chrome AddOn)
 This is a chrome addon created as a part of final semester project made with [Shashank](https://github.com/Shashank13Singh) and [Shubham](https://github.com/shubhamsingh782).
 It uses Django based API running on Heroku created by Shubham ([code here](https://github.com/shubhamsingh782/PAC)).
-The android app for the same was made by [Shashank](https://github.com/Shashank13Singh).
+The android app for the same was made by Shashank ([code here](https://github.com/Shashank13Singh/Pack_Android_App)).
 
 A [web-app](https://pecker.surge.sh/) and a [Firefox add-on](https://github.com/rahulpsd18/PACK/tree/firefox-addon) were also created which can be found in this repository's branches.
 

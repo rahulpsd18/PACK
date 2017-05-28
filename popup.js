@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var xhr = new XMLHttpRequest();
       xhr.open('POST', 'https://nameless-lowlands-50285.herokuapp.com/api/article/login/', true);
       xhr.onload = function () {
-        if(JSON.parse(this.responseText).status) {
+        if(JSON.parse(this.responseText).success) {
           localStorage.setItem('packtoken','Token '+JSON.parse(this.responseText).token);
           localStorage.setItem('packname',JSON.parse(this.responseText).name);
           window.location = "loggedin.html";
